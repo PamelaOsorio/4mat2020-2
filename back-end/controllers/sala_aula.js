@@ -25,7 +25,7 @@
  DELETE Delete
 */
 // Importar o Model para dentro do controller
-const Curso = require('../models/Curso')
+const SalaAula = require('../models/SalaAula')
 const controller = {} // Objeto vazio
 
 // Métodos novo(), implementando a operação CREATE
@@ -33,7 +33,7 @@ controller.novo = async (req, res) => {
 
 try{
     // Envia os dados dentro de req.body para o BD para criação
-    await Curso.create(req.body)
+    await SalaAula.create(req.body)
     res.status(201).end()
   }
   catch(erro){
@@ -47,7 +47,7 @@ try{
 controller.listar = async (req, res) => {
     try{
     // find() sem parâmetros é trazer tudo
-    let dados = await Curso.find()
+    let dados = await SalaAula.find()
     res.send(dados)
     }
     catch(erro) {
@@ -59,7 +59,7 @@ controller.listar = async (req, res) => {
 // Método obterUm() , implementando a operação RETRIEVE (one)
 controller.obterUm = async (req, res) => {
     const id = req.params.id // Capturando o parâmetro id
-    let obj = await Curso.findById(id)
+    let obj = await SalaAula.findById(id)
 
 
     // Se o objeto vier preenchido (achou), então o retornamos
@@ -74,7 +74,7 @@ try{
  // Isolar o _id do objeto para fins de busca
  const id = req.body._id 
  // Busca o objeto pelo id e , encontrando-o, substitui o conteúdo por req.body
-  let obj = await Curso.findByIdAndUpdate(id, req.body)
+  let obj = await SalaAula.findByIdAndUpdate(id, req.body)
    
    // Se encontrou e retornamos e substituiu, retornamos HTTP 204: No content
     if(obj) res.status(204).end()
@@ -91,7 +91,7 @@ try{
 controller.excluir = async (req, res) => {
 try{
     const id = req.body._id
-   let obj =  await Curso.findByIdAndDelete(id)
+   let obj =  await SalaAula.findByIdAndDelete(id)
     
    // Encontrou e excluiu
    if(obj) res.status(204).end()
