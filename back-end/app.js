@@ -38,4 +38,7 @@ app.use('/professor', professor)
 const sala_aula = require('./routes/sala_aula')
 app.use('/sala_aula', sala_aula)
 
+const turma = require('./routes/turma')
+app.use('/turma', turma)
+
 module.exports = app;
