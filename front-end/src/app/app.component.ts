@@ -27,8 +27,14 @@ import { Component } from '@angular/core';
     <router-outlet></router-outlet>
   `,
   styles: []
+<<<<<<< HEAD
  
 })
 export class AppComponent {
   title = 'Escola agora vai';
+=======
+})
+export class AppComponent {
+  title = 'Escola Agora Vai';
+>>>>>>> 208c6969abf916ce1d09866c976269aba9419c77
 }
