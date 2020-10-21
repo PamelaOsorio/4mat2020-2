@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 208c6969abf916ce1d09866c976269aba9419c77
 import { NgModule } from '@angular/core';
 
 //Angular Material Components
@@ -71,8 +67,4 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatPaginatorModule
   ]
 })
-<<<<<<< HEAD
 export class MaterialModule { }
-=======
-export class MaterialModule { }
->>>>>>> 208c6969abf916ce1d09866c976269aba9419c77

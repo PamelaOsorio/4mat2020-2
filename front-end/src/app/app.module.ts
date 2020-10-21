@@ -21,8 +21,4 @@ import { MainToolbarComponent } from './ui/main-toolbar/main-toolbar.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-<<<<<<< HEAD
 export class AppModule { }
-=======
-export class AppModule { }
->>>>>>> 208c6969abf916ce1d09866c976269aba9419c77

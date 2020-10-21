@@ -52,12 +52,7 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
-=======
-              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
->>>>>>> 208c6969abf916ce1d09866c976269aba9419c77
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css"
             ],
             "scripts": []
           },
