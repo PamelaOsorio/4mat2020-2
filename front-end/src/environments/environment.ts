@@ -3,8 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+  apiServer: 'https://3000-b73f48b8-c1a9-4f16-8ee0-1ac98f999ee3.ws-us02.gitpod.io/'
+  
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
