@@ -4,10 +4,10 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class CursoService {
+export class TurmaService {
 
   private server = environment.apiServer
-  private apiUri = this.server + 'curso'
+  private apiUri = this.server + 'turma'
 
   constructor(private http : HttpClient) { }
 
