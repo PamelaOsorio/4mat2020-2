@@ -1,3 +1,4 @@
+  
 import { Component, OnInit } from '@angular/core';
 import { TurmaService } from '../turma.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -11,9 +12,8 @@ export class TurmaListComponent implements OnInit {
 
   turmas : any = []  // Vetor vazio
 
-  displayedColumns : string[] = ['nome', 'curso', 'professor','periodo', 'dias_semana', 'horario', 'sala_aula',
-    'editar', 'excluir']
-
+  displayedColumns : string[] = ['nome', 'curso', 'professor', 'periodo', 'dias_semana', 'horario', 'sala_aula', 'editar', 'excluir']
+  
   constructor(
     private turmaSrv : TurmaService,
     private snackBar : MatSnackBar

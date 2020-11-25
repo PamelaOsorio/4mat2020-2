@@ -1,14 +1,13 @@
 import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
 @Injectable({
   providedIn: 'root'
 })
-export class TurmaService {
+export class ProfessorService {
 
   private server = environment.apiServer
-  private apiUri = this.server + 'turma'
+  private apiUri = this.server + 'professor'
 
   constructor(private http : HttpClient) { }
 
@@ -21,15 +20,14 @@ export class TurmaService {
   }
 
   novo(body : any) {
-    return this.http.post(this.apiUri, body).toPromise()
+      return this.http.post(this.apiUri, body).toPromise()
   }
 
-  obterUm(id: string) {
-    return this.http.get(this.apiUri + '/' + id).toPromise()
+  obterUm(id : string){
+      return this.http.get(this.apiUri + '/' + id).toPromise()
   }
-
-  atualizar(body : any) {
-    return this.http.put(this.apiUri, body).toPromise()
+  atualizar(body : any){
+      return this.http.put(this.apiUri, body).toPromise()
   }
 
 }
