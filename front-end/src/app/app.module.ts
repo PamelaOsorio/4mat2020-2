@@ -1,3 +1,6 @@
+import { NgxMaskModule, IConfig } from 'ngx-mask'
+export const options: Partial<IConfig> | (() =>
+Partial<IConfig>) = null;
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
@@ -37,7 +40,8 @@ import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
     MaterialModule,
     HttpClientModule,
     FormsModule,
-    MatMomentDateModule
+    MatMomentDateModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [// No app.module.ts, dentro seção providers
     /**** Datas em português no MatDatepicker  ****/
